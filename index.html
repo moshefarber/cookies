@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Welcome Page</title>
+	<script type = "text/javascript">
+
+		function setCookie(){
+			cookieText=escape(document.myForm.userName.value);
+			document.cookie="name=" + cookieText;
+		}
+	</script>
+</head>
+<body>
+	<h1>Enter your Name:</h1>
+		<form name="myForm" action="">
+			Name: <input type="text" name="userName">
+			<input type="submit" value="Cookie" onclick="setCookie();">
+		</form>
+
+ <script src="cookies.js"></script>
+</body>
+</html>
